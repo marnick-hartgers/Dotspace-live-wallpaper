@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DotAmountSettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dots"
+                android:textColor="@color/defaultText"
+                android:textSize="12pt" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amountmax150"
+                android:textColor="@color/defaultText"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/numDotsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/numberof_dots"
+                android:ems="10"
+                android:focusedByDefault="false"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:selectAllOnFocus="false"
+                android:text="@string/_50" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spawn method"
+                android:textColor="@color/defaultText"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/spawn_mode_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_spawn_random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Random" />
+
+                <RadioButton
+                    android:id="@+id/rb_spawn_grid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grid" />
+
+                <RadioButton
+                    android:id="@+id/rb_spawn_grid_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grid with random depth" />
+
+                <RadioButton
+                    android:id="@+id/rb_spawn_rects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rectangles" />
+
+                <RadioButton
+                    android:id="@+id/rb_spawn_tri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Triangles" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codeenvolved.wallpapers.dotspace"
+    android:versionCode="3"
+    android:versionName="1.1.1">
+
+    <uses-feature
+        android:name="android.software.live_wallpaper"
+        android:required="true"></uses-feature>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <service
+            android:name=".engine.DotSpaceWallpaperService"
+            android:enabled="true"
+            android:label="Wallpaper Dot Space "
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/dot_space_wallpaper"></meta-data>
+        </service>
+
+        <!-- <activity -->
+        <!-- android:name=".DotSpaceSettingsActivity" -->
+        <!-- android:label="@string/app_name"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DotspaceSettings"
+            android:label="@string/title_activity_dotspace_settings"></activity>
+    </application>
+
+</manifest>

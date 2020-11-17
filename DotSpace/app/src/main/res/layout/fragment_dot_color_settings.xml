@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DotColorSettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/colors"
+            android:textColor="@color/defaultText"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/background"
+            android:textColor="@color/defaultText"
+            android:textSize="18sp" />
+
+        <com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView
+            android:id="@+id/colorPickerBackround"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="550dp">
+
+        </com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dots_and_lines"
+            android:textColor="@color/defaultText"
+            android:textSize="18sp" />
+
+        <com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView
+            android:id="@+id/colorPickerDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="550dp">
+
+        </com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ripple_effect"
+            android:textColor="@color/defaultText"
+            android:textSize="18sp" />
+
+        <com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView
+            android:id="@+id/colorPickerDotsEffect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="550dp">
+
+        </com.codeenvolved.wallpapers.dotspace.activity.ColorPickerView>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
